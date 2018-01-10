@@ -1,12 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
-
-h1 {
-	color: red;
-	&:hover {
-		color: blue;
-	}
+* {
+  font-family: sans-serif;
 }
 
-.card-body.collapse.show {
-	transition: .5s;
+h1 {
+	color: #ccc;
+
+	&:hover {
+		color: blue;
+	};
+}
+
+.item-wrapper {
+	position: relative;
+}
+
+.item-drag-icon {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	&:hover {
+		cursor: pointer;
+		opacity: .8;
+	};
 }

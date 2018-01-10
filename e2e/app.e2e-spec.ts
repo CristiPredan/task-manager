@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('task-manager App', () => {
+describe('todo-app App', () => {
   let page: AppPage;
 
   beforeEach(() => {
