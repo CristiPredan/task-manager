@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 * {
   font-family: sans-serif;
 }
@@ -16,11 +17,62 @@ h1 {
 }
 
 .item-drag-icon {
+
 	position: absolute;
 	top: 15px;
 	right: 10px;
+
 	&:hover {
 		cursor: pointer;
 		opacity: .8;
 	};
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.todoWrapper {
+    border-bottom: 0;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+li {
+    cursor: move;
+    border-bottom: 1px solid transparent;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.ghost {
+    opacity: .4;
+    border: 1px dashed red;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 0;
+}
+
+
+  input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 7px 0 0;
+    
+    &:checked {
+      + label {
+       color: #ccc;
+       text-decoration: underline;
+      }
+    }
+
+    &:not(:checked) {
+      + label {
+        color: #333;
+    }
+  }
+ } 
+

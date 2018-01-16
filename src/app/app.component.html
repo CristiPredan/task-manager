@@ -2,13 +2,14 @@
   <div class="todo-wrapper">
     <app-header></app-header>
     <alert type="success" [dismissible]="false">
-    	<input class="search-filter" type="text"/>
+      <input class="search-filter" type="text"/>
       <span class="fa fa-sort-amount-desc "></span>
-  	</alert>
+    </alert>
     <app-todo-input></app-todo-input>
-    <div *ngFor="let todo of todoService.getTodos()" class="item-wrapper">
-      <app-todo-item [todo]="todo"></app-todo-item>
-      <span class="item-drag-icon fa fa-arrows"></span>
-    </div>
+    <ul id="list">
+      <li *ngFor="let todo of todoService.getTodos()" class="item-wrapper">
+        <app-todo-item [todo]="todo"></app-todo-item>
+      </li>
+    </ul>
   </div>
 </div>

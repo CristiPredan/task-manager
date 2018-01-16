@@ -1,4 +1,5 @@
 <div class="todoWrapper">
-  <button class="removeTodo" (click)="removeTodo()">remove</button><a href="#" class="css-label">{{todo.text}}</a>
-  <span></span>
+  <button class="removeTodo" (click)="removeTodo()">remove</button>
+    <input type="checkbox" class="item-checkbox"/><label class="css-label">{{todo.text}}</label>
+    <span class="item-drag-icon fa fa-arrows"></span>
 </div>
